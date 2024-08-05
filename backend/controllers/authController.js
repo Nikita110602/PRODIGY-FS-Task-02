@@ -68,6 +68,7 @@ export const loginController=async (req, res) => {
          
 
     }catch(e){ 
+        console.log(e.statck);
         return res.status(500).send({
             success:false,
             message:"Internal Error"
