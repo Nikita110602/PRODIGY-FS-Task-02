@@ -23,7 +23,7 @@ function Login() {
     };
     try {
       setloading(true);
-      const response = await fetch("http://localhost:4000/api/auth/login", {
+      const response = await fetch("https://prodigy-fs-task-02.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
